@@ -5,12 +5,12 @@ from kafka.errors import TopicAlreadyExistsError, KafkaError
 
 consumer = KafkaConsumer(
     'orders-topic',
-    bootstrap_servers='localhost:9092'
+    bootstrap_servers='umbrel.local:9092'
 )
 
 print("Connected!")
 
-admin = KafkaAdminClient(bootstrap_servers='localhost:9092')
+admin = KafkaAdminClient(bootstrap_servers='umbrel.local:9092')
 
 topics = [
     NewTopic('orders-topic',       num_partitions=3, replication_factor=1),
