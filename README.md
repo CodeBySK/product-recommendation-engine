@@ -293,5 +293,3 @@ print(f"✅ Spark version: {spark.version}")
 - **Feedback Loop** — customer responses retrain the recommendation model over time
 
 ---
-
-*Built as a learning project to master the Data Engineer → ML Engineer career path in retail tech.*
